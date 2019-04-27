@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link href="equity_calc_style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <title> Gain Calculator
+    </title>
+    <body>
+        <h1> Real Estate Gain Calculator </h1>
+        <form id="userInputs">
+            <p>Purchase Price:
+            <input type="text" id="purchasePrice" value="250000"></p>
+            <p>Downpayment:
+            <input type="text" id="downpayment" value="50000"></p>
+            <p>Improvements:
+            <input type="text" id="improvements" value="15000"></p>
+            <p>Estimated Sales Price:
+            <input type="text" id="currentValue" value="375000"></p>
+            <p>Current Mortgage Amount:
+            <input type="text" id="currentMortgageAmount" value="190000"></p>
+            <p>Tax Rate (%):
+            <input type="text" id="taxRate" value="15"></p>
+            <p>Realtor Commission (%):
+            <input type="text" id="realtorPercentage" value="6"></p>
+        </form>
+        <button id="updateFigures"> Update Figures </button><br>
+        <div id="calcOutputs">
+        <p>Current Equity:
+        <span id="currentEquity"></span></p>
+        <p>Realtor Commission:
+        <span id="realtorCommission"></span></p>
+        <p>Sales Gain (Pre-Tax):
+        <span id="saleGainPreTax"></span></p>
+        <p>Estimated Taxes:
+        <span id="estTaxes"></span></p>
+        <p>Sales Gain (After-Tax):
+        <span id="saleGainPostTax"></span></p>
+        <p>Total Cash Out:
+        <span id="totalCashOut"></span></p>
+        </div>
+        <script src="equity_calc.js"></script>
+    </body>
+</html>
